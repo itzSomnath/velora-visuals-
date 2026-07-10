@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Velora Visuals — Visuals You Can Feel</title>
+  <meta name="description" content="Velora Visuals — Visuals You Can Feel. Premium photography & videography by Tuhin Nayak, based in Durgapur, West Bengal." />
+  <link rel="icon" type="image/png" href="assets/logo/velora-icon.png" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- Cursor -->
+  <div class="custom-cursor" id="cursor"></div>
+  <div class="custom-cursor-dot" id="cursor-dot"></div>
+
+  <!-- Loader -->
+  <div class="loader" id="loader">
+    <div class="loader-logo">
+      <img src="assets/logo/velora-icon.png" alt="Velora Visuals" class="loader-logo-img" />
+    </div>
+    <div class="loader-bar"><div class="loader-progress" id="loader-progress"></div></div>
+  </div>
+
+  <!-- NAV -->
+  <nav class="nav" id="navbar">
+    <a href="#home" class="nav-logo">
+      <img src="assets/logo/velora-logo-wide.png" alt="Velora Visuals" class="nav-logo-img" />
+    </a>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#home" class="nav-link">Home</a></li>
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+      <li><a href="#team" class="nav-link">Team</a></li>
+      <li><a href="#booking" class="nav-link nav-cta">Book Now</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <div class="hero-grain"></div>
+      <div class="hero-overlay"></div>
+      <img src="assets/hero/hero-bg.png" alt="Wedding Photography" class="hero-img" />
+    </div>
+    <div class="hero-content">
+      <p class="hero-tag reveal">WEDDING · EVENTS · PROGRAMS</p>
+      <h1 class="hero-title reveal">
+        <em>Capturing</em><br />
+        Moments<br />
+        <span class="hero-title-accent">Forever.</span>
+      </h1>
+      <p class="hero-sub reveal">Premium Photography & Videography by <strong>Tuhin Nayak</strong></p>
+      <div class="hero-btns reveal">
+        <a href="#portfolio" class="btn btn-light">View Work</a>
+        <a href="#booking" class="btn btn-outline-light">Book Your Date</a>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <div class="scroll-line"></div>
+      <span>SCROLL</span>
+    </div>
+    <div class="hero-brand-stamp">VELORA VISUALS</div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about section" id="about">
+    <div class="container about-grid">
+      <div class="about-img-wrap reveal">
+        <div class="about-img-frame">
+          <img src="assets/team/tuhin-nayak.jpg" alt="Tuhin Nayak — Founder & Creative Director" class="about-img" />
+          <div class="about-img-badge">
+            <span>EST.</span>
+            <strong>2026</strong>
+          </div>
+        </div>
+      </div>
+      <div class="about-text reveal">
+        <p class="section-eyebrow">About Us</p>
+        <h2 class="section-title">Stories Worth <em>Telling</em></h2>
+        <p class="about-desc">
+          <strong>Tuhin Nayak</strong> — Founder &amp; Creative Director, Velora Visuals
+        </p>
+        <div class="about-awards">
+          <span class="award-badge">🏆 Youngest Entrepreneur of Bengal 2026</span>
+          <span class="award-badge">🏆 The Bengal Excellence Award</span>
+        </div>
+        <p class="about-desc">
+          For Tuhin Nayak, photography has never been just about capturing images — it has always been about preserving emotions, celebrating stories, and creating timeless visual legacies.
+        </p>
+        <p class="about-desc">
+          With over four years of experience, Tuhin has built his craft on a rare mix of business acumen and creative vision — pairing a BBA with a B.Sc. in VFX &amp; Film Making. His journey began at J.G. City Event Management, his father's company, where he helped deliver over 1,370 events, from luxury weddings to large-scale live productions.
+        </p>
+        <p class="about-desc">
+          Driven to redefine premium visual storytelling, he founded Velora Visuals on 20 January 2026 — built on creativity, precision, and uncompromising quality. Today, he leads the studio with one simple mission: to create visuals that will be cherished for generations to come.
+        </p>
+        <div class="about-stats">
+          <div class="stat">
+            <strong>340+</strong>
+            <span>Events Delivered</span>
+          </div>
+          <div class="stat">
+            <strong>4+</strong>
+            <span>Years Experience</span>
+          </div>
+          <div class="stat">
+            <strong>5★</strong>
+            <span>Rating</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PORTFOLIO -->
+  <section class="portfolio section" id="portfolio">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-eyebrow">Our Work</p>
+        <h2 class="section-title">Featured <em>Portfolio</em></h2>
+      </div>
+      <div class="portfolio-filter reveal">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="wedding">Wedding</button>
+        <button class="filter-btn" data-filter="prewedding">Pre Wedding</button>
+        <button class="filter-btn" data-filter="postwedding">Post Wedding</button>
+        <button class="filter-btn" data-filter="anniversary">Anniversary</button>
+        <button class="filter-btn" data-filter="newbornbaby">New Born Baby</button>
+        <button class="filter-btn" data-filter="babyshower">Baby Shower</button>
+        <button class="filter-btn" data-filter="corporate">Corporate</button>
+        <button class="filter-btn" data-filter="birthday">Birthday</button>
+        <button class="filter-btn" data-filter="upanayan">Upanayan</button>
+        <button class="filter-btn" data-filter="advertisement">Advertisement</button>
+      </div>
+
+      <!-- ALL VIEW: one preview card per category. Click/hover opens that category's full gallery. -->
+      <div class="portfolio-categories" id="portfolio-categories"></div>
+
+      <!-- CATEGORY VIEW: full gallery for the selected category -->
+      <div class="portfolio-gallery" id="portfolio-gallery" hidden>
+        <div class="gallery-header">
+          <button class="gallery-back" id="gallery-back">← Back to All</button>
+          <h3 class="gallery-title" id="gallery-title"></h3>
+        </div>
+        <div class="portfolio-grid-scroll">
+          <div class="portfolio-grid" id="portfolio-grid"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LEADERSHIP -->
+  <section class="about section" id="leadership">
+    <div class="container about-grid">
+      <div class="about-img-wrap reveal">
+        <div class="about-img-frame">
+          <img src="assets/team/Nirmal_Kumar_Nayak__Chairman_Emeritus_.jpeg" alt="Nirmal Kumar Nayak — Chairman Emeritus" class="about-img" />
+          <div class="about-img-badge">
+            <span>EST.</span>
+            <strong>2008</strong>
+          </div>
+        </div>
+      </div>
+      <div class="about-text reveal">
+        <p class="section-eyebrow">The Legacy</p>
+        <h2 class="section-title">Chairman <em>Emeritus</em></h2>
+        <p class="about-desc">
+          <strong>Nirmal Kumar Nayak</strong> — Chairman Emeritus | Founder, J.G. City Event Management
+        </p>
+        <p class="about-desc">
+          Behind every enduring institution stands a visionary whose unwavering dedication, integrity, and perseverance shape its legacy. With a career spanning over four decades, Mr. Nirmal Kumar Nayak has earned immense respect as a photographer, journalist, entrepreneur, and mentor across the media and event industries.
+        </p>
+        <p class="about-desc">
+          His journey began in 1983 as a professional Event Photographer, capturing countless milestones with technical skill and artistic vision. In 1999, he expanded into journalism as a Media Reporter, and today serves as a Senior Crime Reporter — a role reflecting decades of credibility and commitment to ethical reporting.
+        </p>
+        <p class="about-desc">
+          Driven by entrepreneurial vision, he founded J.G. City Event Management in 2008, growing it into a trusted, multi-specialty brand. Continuing that legacy, Velora Visuals was established in 2026 as its flagship premium unit — carrying forward the same values of innovation, creativity, and perfection into the next generation of cinematic storytelling.
+        </p>
+        <p class="about-desc">
+          As Chairman, Mr. Nayak continues to provide strategic direction and mentorship to the organization. More than a founder, he is a visionary leader whose enduring commitment to integrity, discipline, and excellence remains the cornerstone of J.G. City Event Management and Velora Visuals.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- TEAM -->
+  <section class="team section section-dark" id="team">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-eyebrow light">The People</p>
+        <h2 class="section-title light">Meet the <em>Team</em></h2>
+      </div>
+      <div class="team-grid">
+        <div class="team-card reveal featured">
+          <div class="team-img-wrap">
+            <img src="assets/team/tuhin-nayak.jpg" alt="Tuhin Nayak" />
+            <div class="team-socials">
+              <a href="https://www.instagram.com/tuhin_nayak_films/" target="_blank" rel="noopener" aria-label="Instagram" class="team-social">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+              </a>
+            </div>
+          </div>
+          <div class="team-info">
+            <h3>Tuhin Nayak</h3>
+            <span class="team-role">Founder & Lead Photographer</span>
+            <p>The visionary behind Velora Visuals. With over 4 years of experience, Tuhin brings artistry, passion, and a cinematic eye to every project.</p>
+          </div>
+        </div>
+
+        <div class="team-card reveal">
+          <div class="team-img-wrap">
+            <img src="assets/team/Asmita_Adhikari__Co-Founder_.jpeg" alt="Asmita Adhikary" />
+          </div>
+          <div class="team-info">
+            <h3>Asmita Adhikary</h3>
+            <span class="team-role">Co-Founder</span>
+            <p>Co-Founder of Velora Visuals, Asmita brings 6+ years of experience shaping the studio's creative direction and client experience.</p>
+          </div>
+        </div>
+
+        <div class="team-card reveal">
+          <div class="team-img-wrap">
+            <img src="assets/team/Sujay_Biswas___Lead_Photographer__.jpeg" alt="Sujay Biswas" />
+          </div>
+          <div class="team-info">
+            <h3>Sujay Biswas</h3>
+            <span class="team-role">Lead Photographer</span>
+            <p>With 5+ years behind the lens, Sujay leads the photography team with a keen eye for candid emotion and composition.</p>
+          </div>
+        </div>
+
+        <div class="team-card reveal">
+          <div class="team-img-wrap">
+            <img src="assets/team/Sagar_Kora___Lead_Cinematographer__.jpeg" alt="Sagar Kora" />
+          </div>
+          <div class="team-info">
+            <h3>Sagar Kora</h3>
+            <span class="team-role">Lead Cinematographer</span>
+            <p>Sagar brings 6+ years of cinematography experience, crafting wedding films that feel like living memories.</p>
+          </div>
+        </div>
+
+        <div class="team-card reveal">
+          <div class="team-img-wrap">
+            <img src="assets/team/Apu_Bouri___Wide_Photographer__.jpeg" alt="Apu Bouri" />
+          </div>
+          <div class="team-info">
+            <h3>Apu Bouri</h3>
+            <span class="team-role">Wide Photographer</span>
+            <p>Specializing in wide-angle framing, Apu has 4+ years of experience capturing grand venues and sweeping moments.</p>
+          </div>
+        </div>
+
+        <div class="team-card reveal">
+          <div class="team-img-wrap">
+            <img src="assets/team/Koushik_Debnath___Wide_Cinematographer__.jpeg" alt="Koushik Debnath" />
+          </div>
+          <div class="team-info">
+            <h3>Koushik Debnath</h3>
+            <span class="team-role">Wide Cinematographer</span>
+            <p>With 5+ years in wide-format cinematography, Koushik captures the scale and energy of every celebration.</p>
+          </div>
+        </div>
+
+        <div class="team-card reveal">
+          <div class="team-img-wrap">
+            <img src="assets/team/Sourav_Halder__Cinematographer_.jpeg" alt="Sourav Halder" />
+          </div>
+          <div class="team-info">
+            <h3>Sourav Halder</h3>
+            <span class="team-role">Cinematographer</span>
+            <p>Sourav has 4+ years of experience telling stories through motion, blending emotion with technical precision.</p>
+          </div>
+        </div>
+
+        <div class="team-card reveal">
+          <div class="team-img-wrap">
+            <img src="assets/team/Anirban_Banerjee__Cinematographer_.jpeg" alt="Anirban Banerjee" />
+          </div>
+          <div class="team-info">
+            <h3>Anirban Banerjee</h3>
+            <span class="team-role">Cinematographer</span>
+            <p>With 5+ years of experience, Anirban specializes in candid, documentary-style event cinematography.</p>
+          </div>
+        </div>
+
+        <div class="team-card reveal">
+          <div class="team-img-wrap">
+            <img src="assets/team/Tarakeswar_Ram__Cinematographer_.jpeg" alt="Tarakeswar Ram" />
+          </div>
+          <div class="team-info">
+            <h3>Tarakeswar Ram</h3>
+            <span class="team-role">Cinematographer</span>
+            <p>Tarakeswar brings 6+ years of experience capturing dynamic, high-energy event footage.</p>
+          </div>
+        </div>
+
+        <div class="team-card reveal">
+          <div class="team-img-wrap">
+            <img src="assets/team/Snehasish_Routh__Photographer_.jpeg" alt="Snehasish Routh" />
+          </div>
+          <div class="team-info">
+            <h3>Snehasish Routh</h3>
+            <span class="team-role">Photographer</span>
+            <p>With 4+ years of experience, Snehasish has an eye for natural light and unposed, authentic moments.</p>
+          </div>
+        </div>
+
+        <div class="team-card reveal">
+          <div class="team-img-wrap">
+            <img src="assets/team/Prakash_Dhara__FPV_pilot_.jpeg" alt="Prakash Dhara" />
+          </div>
+          <div class="team-info">
+            <h3>Prakash Dhara</h3>
+            <span class="team-role">FPV Pilot</span>
+            <p>Our FPV specialist with 4+ years of experience, Prakash delivers breathtaking aerial perspectives that elevate every film.</p>
+          </div>
+        </div>
+
+        <div class="team-card reveal">
+          <div class="team-img-wrap">
+            <img src="assets/team/Susobhan_Bose__Chief_Editor_.jpeg" alt="Susobhan Bose" />
+          </div>
+          <div class="team-info">
+            <h3>Susobhan Bose</h3>
+            <span class="team-role">Chief Editor</span>
+            <p>Leading post-production with 6+ years of experience, Susobhan transforms raw footage into polished, emotion-driven films.</p>
+          </div>
+        </div>
+
+        <div class="team-card reveal">
+          <div class="team-img-wrap">
+            <img src="assets/team/Rahul_Karmakar__Lead_Photo_Editor_.jpeg" alt="Rahul Karmakar" />
+          </div>
+          <div class="team-info">
+            <h3>Rahul Karmakar</h3>
+            <span class="team-role">Lead Photo Editor</span>
+            <p>With 5+ years in photo editing, Rahul brings a refined, consistent aesthetic to every final gallery.</p>
+          </div>
+        </div>
+
+        <div class="team-card reveal">
+          <div class="team-img-wrap">
+            <img src="assets/team/Somnath_Low__Junior_Album_Designer_.jpg" alt="Somnath Low" />
+          </div>
+          <div class="team-info">
+            <h3>Somnath Low</h3>
+            <span class="team-role">Junior Album Designer</span>
+            <p>Somnath brings 4+ years of design experience, crafting elegant album layouts that showcase every story beautifully.</p>
+          </div>
+        </div>
+
+        <div class="team-card reveal">
+          <div class="team-img-wrap">
+            <img src="assets/team/Subham_Bhattacharya__Marketing___Sales_.jpeg" alt="Subham Bhattacharya" />
+          </div>
+          <div class="team-info">
+            <h3>Subham Bhattacharya</h3>
+            <span class="team-role">Marketing & Sales</span>
+            <p>With 5+ years in marketing and client acquisition, Subham ensures every client's journey with Velora Visuals starts smoothly.</p>
+          </div>
+        </div>
+
+        <div class="team-card reveal">
+          <div class="team-img-wrap">
+            <img src="assets/team/Baishaki_Roy___Client_Relations_Consultant__.jpeg" alt="Baishaki Roy" />
+          </div>
+          <div class="team-info">
+            <h3>Baishaki Roy</h3>
+            <span class="team-role">Client Relations Consultant</span>
+            <p>With 4+ years of experience, Baishaki ensures every client feels heard, valued, and cared for throughout their journey.</p>
+          </div>
+        </div>
+
+        <div class="team-card reveal">
+          <div class="team-img-wrap">
+            <img src="assets/team/Arpita_Mukherjee___Client_Relations_Consultant__.jpeg" alt="Arpita Mukherjee" />
+          </div>
+          <div class="team-info">
+            <h3>Arpita Mukherjee</h3>
+            <span class="team-role">Client Relations Consultant</span>
+            <p>Arpita brings 5+ years of experience in client coordination, making sure every booking runs seamlessly.</p>
+          </div>
+        </div>
+
+        <div class="team-card reveal">
+          <div class="team-img-wrap">
+            <img src="assets/team/Reema_Gupta___Lead_Mehendi_Artist__.jpeg" alt="Reema Gupta" />
+          </div>
+          <div class="team-info">
+            <h3>Reema Gupta</h3>
+            <span class="team-role">Lead Mehendi Artist</span>
+            <p>With 6+ years of experience, Reema leads our mehendi artistry, adding intricate tradition to every celebration.</p>
+          </div>
+        </div>
+
+        <div class="team-card reveal">
+          <div class="team-img-wrap">
+            <img src="assets/team/Kalpita_De_Sikdar___Lead_Makeup_artist_.jpeg" alt="Kalpita De Sikdar" />
+          </div>
+          <div class="team-info">
+            <h3>Kalpita De Sikdar</h3>
+            <span class="team-role">Lead Makeup Artist</span>
+            <p>With 5+ years of experience, Kalpita crafts flawless bridal looks that shine on camera and in person.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="testimonials section" id="testimonials">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-eyebrow">Kind Words</p>
+        <h2 class="section-title">What Clients <em>Say</em></h2>
+      </div>
+      <div class="testimonials-track reveal">
+        <div class="testimonial-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <p>"Tuhin and his team captured our wedding perfectly. Every emotion, every detail — it was like reliving the most beautiful day of our lives."</p>
+          <div class="testimonial-author">
+            <strong>Sneha & Rahul</strong>
+            <span>Wedding, Asansol 2024</span>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <p>"Absolutely professional. Our school's annual program has never looked this good on screen. The team was punctual, polite, and incredibly talented."</p>
+          <div class="testimonial-author">
+            <strong>Principal A. Ghosh</strong>
+            <span>School Program, 2024</span>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <p>"The cinematic wedding film they delivered made us cry all over again. Velora Visuals truly understands the art of storytelling."</p>
+          <div class="testimonial-author">
+            <strong>Ankita & Dev</strong>
+            <span>Wedding, Durgapur 2023</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BOOKING -->
+  <section class="booking section section-dark" id="booking">
+    <div class="container">
+      <div class="booking-grid">
+        <div class="booking-info reveal">
+          <p class="section-eyebrow light">Online Booking</p>
+          <h2 class="section-title light">Reserve Your <em>Date</em></h2>
+          <p class="booking-desc">Ready to preserve your most precious moments? Fill in the form and our team will reach out within 24 hours to confirm your booking and discuss your vision.</p>
+          <div class="booking-contact-list">
+            <div class="contact-item">
+              <span class="contact-icon">📞</span>
+              <div>
+                <strong>Phone / WhatsApp</strong>
+                <span>+91 78110 24848 / +91 78120 24848</span>
+              </div>
+            </div>
+            <div class="contact-item">
+              <span class="contact-icon">✉️</span>
+              <div>
+                <strong>Email</strong>
+                <span>hello@veloravisuals.com</span>
+              </div>
+            </div>
+            <div class="contact-item">
+              <span class="contact-icon">📍</span>
+              <div>
+                <strong>Location</strong>
+                <span>MS 19/07, Phase – II, Bengal Ambuja, City Center, Durgapur</span>
+              </div>
+            </div>
+            <div class="contact-item">
+              <span class="contact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="20" height="20"><path d="M15 3h-3a4 4 0 0 0-4 4v3H5v4h3v7h4v-7h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+              </span>
+              <div>
+                <strong>Facebook</strong>
+                <span>The Velora Visuals</span>
+              </div>
+            </div>
+            <div class="contact-item">
+              <a href="https://www.instagram.com/the_velora_visuals/" target="_blank" rel="noopener" class="instagram-link">
+                <span class="contact-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="20" height="20"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+                </span>
+                <div>
+                  <strong>Instagram</strong>
+                  <span>@the_velora_visuals</span>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="booking-form-wrap reveal">
+          <form class="booking-form" id="booking-form" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="fname">Your Name *</label>
+                <input type="text" id="fname" name="name" placeholder="Full Name" required />
+              </div>
+              <div class="form-group">
+                <label for="fphone">Phone / WhatsApp *</label>
+                <input type="tel" id="fphone" name="phone" placeholder="+91 78110 24848" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="femail">Email Address</label>
+              <input type="email" id="femail" name="email" placeholder="you@email.com" />
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="fservice">Service Required *</label>
+                <select id="fservice" name="service" required>
+                  <option value="" disabled selected>Select a service</option>
+                  <option>Wedding Photography</option>
+                  <option>Wedding Videography</option>
+                  <option>Wedding Photo + Video</option>
+                  <option>Program Photography</option>
+                  <option>Program Videography</option>
+                  <option>Program Photo + Video</option>
+                  <option>Other</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="fdate">Event Date *</label>
+                <input type="date" id="fdate" name="date" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="flocation">Event Location</label>
+              <input type="text" id="flocation" name="location" placeholder="City / Venue" />
+            </div>
+            <div class="form-group">
+              <label for="fmessage">Tell Us About Your Event</label>
+              <textarea id="fmessage" name="message" rows="4" placeholder="Share any special requirements or questions..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-gold btn-full">
+              <span class="btn-text">Send Booking Request</span>
+              <span class="btn-arrow">→</span>
+            </button>
+            <div class="form-success" id="form-success">
+              ✓ Thank you! We'll reach out within 24 hours.
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="#home" class="nav-logo footer-logo">
+          <img src="assets/logo/velora-logo-wide.png" alt="Velora Visuals" class="nav-logo-img footer-logo-img" />
+        </a>
+        <p class="footer-tagline">VISUALS YOU CAN FEEL</p>
+        <p>By Tuhin Nayak<br/>Durgapur, West Bengal, India</p>
+        <a href="https://www.instagram.com/the_velora_visuals/" target="_blank" rel="noopener" class="footer-instagram">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="20" height="20"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+          @the_velora_visuals
+        </a>
+      </div>
+      <div class="footer-links">
+        <h4>Navigate</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#team">Team</a></li>
+          <li><a href="#booking">Book Now</a></li>
+        </ul>
+      </div>
+      <div class="footer-services">
+        <h4>What We Shoot</h4>
+        <ul>
+          <li>Wedding Photography & Films</li>
+          <li>Pre & Post Wedding</li>
+          <li>Anniversary Shoots</li>
+          <li>Baby & Family</li>
+          <li>Corporate & Advertisement</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Velora Visuals. All rights reserved. Crafted with ❤ by Tuhin Nayak.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
